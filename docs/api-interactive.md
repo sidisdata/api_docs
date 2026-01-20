@@ -67,8 +67,8 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
 <ApiEndpoint
   method="GET"
   endpoint="/{module}"
-  title="Obtener Registros"
-  description="Obtiene registros del módulo especificado con soporte para paginación, filtros, ordenamiento y población de referencias."
+  title="Obtener Registros con Agregación"
+  description="Obtiene registros del módulo especificado usando pipeline de agregación de MongoDB. Permite queries complejas, agrupaciones, ordenamiento y transformaciones de datos."
   pathParams={[
     {
       name: "module",
@@ -78,49 +78,62 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
   ]}
   queryParams={[
     {
-      name: "page",
-      description: "Número de página (default: 1)",
-      example: "1"
-    },
-    {
-      name: "limit",
-      description: "Registros por página (default: 10, max: 100)",
-      example: "10"
-    },
-    {
-      name: "sort",
-      description: "Campo para ordenar (ej: 'name', '-createdAt')",
-      example: "name"
-    },
-    {
-      name: "populate",
-      description: "Campos a poblar (ej: 'user,files')",
-      example: "user"
-    },
-    {
-      name: "search",
-      description: "Término de búsqueda",
-      example: "john"
+      name: "aggregate",
+      description: "Pipeline de agregación de MongoDB en formato JSON",
+      example: "Envía el pipeline en el body del request"
     }
   ]}
+  requestBody={`[
+  {
+    "$unwind": "$listProduct"
+  },
+  {
+    "$group": {
+      "_id": {
+        "productName": "$listProduct.name",
+        "unit": "$listProduct.unit"
+      },
+      "totalRequired": {
+        "$sum": {
+          "$toDouble": "$listProduct.requiredProduct"
+        }
+      },
+      "totalAvailable": {
+        "$sum": "$listProduct.availableQty"
+      },
+      "quotesCount": {
+        "$sum": 1
+      }
+    }
+  },
+  {
+    "$sort": {
+      "totalRequired": -1
+    }
+  }
+]`}
   responseExample={`{
   "status": 200,
   "data": [
     {
-      "_id": "507f1f77bcf86cd799439011",
-      "name": "John Doe",
-      "email": "john@example.com",
-      "createdAt": "2023-10-27T10:00:00Z"
+      "_id": {
+        "productName": "Producto A",
+        "unit": "kg"
+      },
+      "totalRequired": 150.5,
+      "totalAvailable": 120.0,
+      "quotesCount": 5
+    },
+    {
+      "_id": {
+        "productName": "Producto B", 
+        "unit": "litros"
+      },
+      "totalRequired": 95.3,
+      "totalAvailable": 88.7,
+      "quotesCount": 3
     }
   ],
-  "pagination": {
-    "totalDocs": 1,
-    "limit": 10,
-    "totalPages": 1,
-    "page": 1,
-    "hasNextPage": false,
-    "hasPrevPage": false
-  },
   "error": false,
   "message": ""
 }`}
