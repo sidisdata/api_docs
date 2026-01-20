@@ -34,7 +34,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
   "password": "password123",
   "customField": "valor"
 }`}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": {
       "_id": "507f1f77bcf86cd799439011",
@@ -53,7 +53,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
     },
     "error": false,
     "message": ""
-  }}
+  } }
 />
 
 ### Características Principales
@@ -118,7 +118,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
     "model": "People"
   }
 ]`}
-  responseExample={{
+  responseExample={
     "statusCode": 200,
     "data": [
       {
@@ -178,7 +178,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
       example: "csv"
     }
   ]}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": [
       {
@@ -233,7 +233,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
       example: "true"
     }
   ]}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": {
       "_id": "507f1f77bcf86cd799439011",
@@ -278,7 +278,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
   "email": "nuevo@email.com",
   "status": "active"
 }`}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": {
       "_id": "507f1f77bcf86cd799439011",
@@ -337,7 +337,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
     "age": 30
   }
 ]`}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": "Bulk update completed",
     "error": false,
@@ -371,7 +371,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
     "updatedBy": "admin"
   }
 }`}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": "Bulk update completed",
     "error": false,
@@ -400,7 +400,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
       description: "ObjectId del registro a eliminar"
     }
   ]}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": {
       "_id": "507f1f77bcf86cd799439011",
@@ -432,7 +432,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
   "507f1f77bcf86cd799439012",
   "507f1f77bcf86cd799439013"
 ]`}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": [
       "507f1f77bcf86cd799439011",
@@ -465,7 +465,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
   headers={{
     "Content-Type": "multipart/form-data"
   }}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": {
       "_id": "507f1f77bcf86cd799439011",
@@ -508,7 +508,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
       example: "email,vat"
     }
   ]}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": "Import completed",
     "error": false,
@@ -551,7 +551,7 @@ Todos los endpoints siguientes utilizarán automáticamente la configuración qu
       example: "csv"
     }
   ]}
-  responseExample={{
+  responseExample={
     "status": 200,
     "data": { "module": "users" },
     "error": false,
