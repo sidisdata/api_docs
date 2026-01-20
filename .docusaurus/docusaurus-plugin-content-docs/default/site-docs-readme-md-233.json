@@ -1,0 +1,24 @@
+{
+  "id": "README",
+  "title": "Documentación Interactiva SIDIS API",
+  "description": "Esta es una documentación interactiva de tu API construida con Docusaurus que permite probar los endpoints directamente desde el navegador, similar a Swagger UI.",
+  "source": "@site/docs/README.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introducción",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "API CRUD Documentation - Generic Controller",
+    "permalink": "/docs/api-documentation"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "auth-api-documentation",
+  "title": "API Authentication Documentation",
+  "description": "Esta documentación describe todos los endpoints de autenticación disponibles en el sistema SIDIS.",
+  "source": "@site/docs/auth-api-documentation.md",
+  "sourceDirName": ".",
+  "slug": "/auth-api-documentation",
+  "permalink": "/docs/auth-api-documentation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/auth-api-documentation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "API Interactiva - Controlador Genérico",
+    "permalink": "/docs/api-interactive"
+  }
+}

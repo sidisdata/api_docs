@@ -1,0 +1,24 @@
+{
+  "id": "api-documentation",
+  "title": "API CRUD Documentation - Generic Controller",
+  "description": "Esta documentación describe los endpoints CRUD del controlador genérico que maneja operaciones dinámicas sobre diferentes módulos de la aplicación.",
+  "source": "@site/docs/api-documentation.md",
+  "sourceDirName": ".",
+  "slug": "/api-documentation",
+  "permalink": "/docs/api-documentation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/api-documentation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Documentación Interactiva SIDIS API",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "API Interactiva - Controlador Genérico",
+    "permalink": "/docs/api-interactive"
+  }
+}

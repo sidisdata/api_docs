@@ -1,0 +1,105 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for API components */
+.api-endpoint {
+  margin: 2rem 0;
+}
+
+.method-badge {
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.method-get {
+  background-color: #61affe;
+  color: white;
+}
+
+.method-post {
+  background-color: #49cc90;
+  color: white;
+}
+
+.method-put {
+  background-color: #fca130;
+  color: white;
+}
+
+.method-delete {
+  background-color: #f93e3e;
+  color: white;
+}
+
+.endpoint-url {
+  font-family: var(--ifm-font-family-monospace);
+  background: var(--ifm-code-background);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+/* Better spacing for code blocks */
+.prism-code {
+  font-size: 0.875rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .api-endpoint {
+    margin: 1rem 0;
+  }
+}
+
+/* Custom alert styles */
+.alert--api {
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+/* JSON syntax highlighting improvements */
+.token.property {
+  color: #0451a5;
+}
+
+.token.string {
+  color: #a31515;
+}
+
+.token.number {
+  color: #098658;
+}
+
+.token.boolean {
+  color: #0000ff;
+}
