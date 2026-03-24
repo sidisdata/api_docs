@@ -50,7 +50,7 @@ export default {
           "label": "Documentation"
         },
         {
-          "href": "https://github.com/sidis/sidis-api",
+          "href": "https://github.com/sidis/sidis-api-docs",
           "label": "GitHub",
           "position": "right"
         }
@@ -66,20 +66,24 @@ export default {
             {
               "label": "API Documentation",
               "to": "/docs/intro"
+            },
+            {
+              "label": "Authentication",
+              "to": "/docs/auth-api-documentation"
             }
           ]
         },
         {
-          "title": "More",
+          "title": "Community",
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/sidis/sidis-api"
+              "href": "https://github.com/sidis/sidis-api-docs"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2026 SIDIS. Built with Docusaurus."
+      "copyright": "Copyright © 2026 SIDIS API Documentation."
     },
     "prism": {
       "theme": {

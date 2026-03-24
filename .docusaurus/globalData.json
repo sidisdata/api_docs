@@ -34,6 +34,11 @@
               "id": "README",
               "path": "/docs/",
               "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "webhook-executions",
+              "path": "/docs/webhook-executions",
+              "sidebar": "tutorialSidebar"
             }
           ],
           "draftIds": [],

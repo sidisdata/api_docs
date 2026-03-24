@@ -14,11 +14,7 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Introducción",
-    "permalink": "/docs/intro"
-  },
-  "next": {
-    "title": "API CRUD Documentation - Generic Controller",
-    "permalink": "/docs/api-documentation"
+    "title": "Documentación API - Webhook Execute",
+    "permalink": "/docs/webhook-executions"
   }
 }

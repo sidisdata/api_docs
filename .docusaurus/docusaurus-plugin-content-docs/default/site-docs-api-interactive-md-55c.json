@@ -1,7 +1,7 @@
 {
   "id": "api-interactive",
-  "title": "API Interactiva - Controlador Genérico",
-  "description": "Esta documentación describe los endpoints CRUD del controlador genérico que maneja operaciones dinámicas sobre diferentes módulos de la aplicación.",
+  "title": "API Interactiva",
+  "description": "Esta documentación te permite probar la API de SIDIS de forma interactiva, similar a Swagger UI. Configura tu URL base y token JWT una vez, y luego prueba todos los endpoints directamente desde aquí.",
   "source": "@site/docs/api-interactive.md",
   "sourceDirName": ".",
   "slug": "/api-interactive",
@@ -11,7 +11,12 @@
   "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/api-interactive.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "api-interactive",
+    "title": "API Interactiva",
+    "sidebar_position": 3
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "API CRUD Documentation - Generic Controller",

@@ -11,17 +11,17 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://sidisdata.github.io',
+  url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/api_docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'sidisdata', // Usually your GitHub org/user name.
-  projectName: 'api_docs', // Usually your repo name.
+  organizationName: 'sidis', // Usually your GitHub org/user name.
+  projectName: 'sidis-api-docs', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -70,7 +70,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/sidis/sidis-api',
+            href: 'https://github.com/sidis/sidis-api-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -86,19 +86,23 @@ const config = {
                 label: 'API Documentation',
                 to: '/docs/intro',
               },
+              {
+                label: 'Authentication',
+                to: '/docs/auth-api-documentation',
+              },
             ],
           },
           {
-            title: 'More',
+            title: 'Community',
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/sidis/sidis-api',
+                href: 'https://github.com/sidis/sidis-api-docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SIDIS. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SIDIS API Documentation.`,
       },
       prism: {
         theme: lightCodeTheme,

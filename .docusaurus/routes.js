@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '6e4'),
+    component: ComponentCreator('/docs', 'c05'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '35c'),
+        component: ComponentCreator('/docs', '792'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'b32'),
+            component: ComponentCreator('/docs', '8ab'),
             routes: [
               {
                 path: '/docs/',
@@ -76,6 +76,12 @@ export default [
               {
                 path: '/docs/intro',
                 component: ComponentCreator('/docs/intro', '61d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/webhook-executions',
+                component: ComponentCreator('/docs/webhook-executions', '390'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

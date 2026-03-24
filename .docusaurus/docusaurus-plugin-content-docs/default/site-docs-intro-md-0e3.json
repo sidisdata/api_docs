@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Documentación Interactiva SIDIS API",
-    "permalink": "/docs/"
+    "title": "API CRUD Documentation - Generic Controller",
+    "permalink": "/docs/api-documentation"
   }
 }
