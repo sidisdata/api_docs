@@ -1,0 +1,25 @@
+{
+  "id": "license",
+  "title": "License",
+  "description": "Copyright (c) 2026 SIDIS",
+  "source": "@site/docs/license.md",
+  "sourceDirName": ".",
+  "slug": "/license",
+  "permalink": "/docs/license",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/license.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "id": "license",
+    "title": "License",
+    "sidebar_position": 100
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Documentación Interactiva SIDIS API",
+    "permalink": "/docs/"
+  }
+}

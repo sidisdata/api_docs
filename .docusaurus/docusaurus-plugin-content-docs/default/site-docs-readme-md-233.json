@@ -16,5 +16,9 @@
   "previous": {
     "title": "Documentación API - Webhook Execute",
     "permalink": "/docs/webhook-executions"
+  },
+  "next": {
+    "title": "License",
+    "permalink": "/docs/license"
   }
 }

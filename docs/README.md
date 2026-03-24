@@ -167,7 +167,7 @@ En el directorio `docs/`:
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT - ve el archivo [LICENSE](LICENSE) para detalles.
+Este proyecto está bajo la Licencia MIT - ve el archivo [LICENSE](license) para detalles.
 
 ## Troubleshooting
 

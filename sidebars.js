@@ -33,6 +33,7 @@ const sidebars = {
       ],
     },
     'README',
+    'license',
   ],
 
   // But you can create a sidebar manually
