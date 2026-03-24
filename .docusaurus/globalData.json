@@ -36,6 +36,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "permissions-documentation",
+              "path": "/api_docs/docs/permissions-documentation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "README",
               "path": "/api_docs/docs/",
               "sidebar": "tutorialSidebar"

@@ -1,0 +1,20 @@
+{
+  "id": "permissions-documentation",
+  "title": "Documentación de Permisos",
+  "description": "Índice",
+  "source": "@site/docs/permissions-documentation.md",
+  "sourceDirName": ".",
+  "slug": "/permissions-documentation",
+  "permalink": "/docs/permissions-documentation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/permissions-documentation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "permissions-documentation",
+    "title": "Documentación de Permisos",
+    "sidebar_position": 4
+  }
+}

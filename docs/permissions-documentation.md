@@ -4,9 +4,9 @@ title: Documentación de Permisos
 sidebar_position: 4
 ---
 
-# 🔐 Documentación de Permisos SIDIS API
+# Documentación de Permisos SIDIS API
 
-## 📋 Índice
+## Índice
 
 - [Introducción](#introducción)
 - [Estructura de Roles](#estructura-de-roles)
@@ -19,7 +19,7 @@ sidebar_position: 4
 
 ---
 
-## 🎯 Introducción
+## Introducción
 
 El sistema SIDIS API utiliza **CASL (Conditional Access Subscription Language)** para manejo granular de permisos. Esto permite control fino sobre:
 
@@ -30,7 +30,7 @@ El sistema SIDIS API utiliza **CASL (Conditional Access Subscription Language)**
 
 ---
 
-## 🏗️ Estructura de Roles
+## Estructura de Roles
 
 ### Esquema Base de un Rol
 
@@ -72,7 +72,7 @@ El sistema SIDIS API utiliza **CASL (Conditional Access Subscription Language)**
 
 ---
 
-## 🎭 Tipos de Acciones
+## Tipos de Acciones
 
 ### Acciones Básicas
 
@@ -124,7 +124,7 @@ El sistema SIDIS API utiliza **CASL (Conditional Access Subscription Language)**
 
 ---
 
-## 🔍 Permisos a Nivel de Campos
+## Permisos a Nivel de Campos
 
 ### Formato por Acción (Recomendado)
 
@@ -181,9 +181,9 @@ Use el prefijo `!` para **excluir campos específicos**:
 
 ---
 
-## 📝 Ejemplos de Configuración
+## Ejemplos de Configuración
 
-### 👑 Administrador Total
+### Administrador Total
 
 ```json
 {
@@ -197,7 +197,7 @@ Use el prefijo `!` para **excluir campos específicos**:
 }
 ```
 
-### 👀 Solo Lectura
+### Solo Lectura
 
 ```json
 {
@@ -214,7 +214,7 @@ Use el prefijo `!` para **excluir campos específicos**:
 }
 ```
 
-### ✏️ Editor de Personas
+### Editor de Personas
 
 ```json
 {
@@ -233,7 +233,7 @@ Use el prefijo `!` para **excluir campos específicos**:
 }
 ```
 
-### 🔒 Usuario con Restricciones
+### Usuario con Restricciones
 
 Solo puede ver/editar sus propios registros:
 
@@ -259,7 +259,7 @@ Solo puede ver/editar sus propios registros:
 }
 ```
 
-### 🚫 Rol con Prohibiciones
+### Rol con Prohibiciones
 
 ```json
 {
@@ -280,9 +280,9 @@ Solo puede ver/editar sus propios registros:
 
 ---
 
-## 🚀 Casos de Uso Avanzados
+## Casos de Uso Avanzados
 
-### 🏢 Roles Organizacionales
+### Roles Organizacionales
 
 **Gerente de Sucursal** - Solo ve datos de su oficina:
 
@@ -309,7 +309,7 @@ Solo puede ver/editar sus propios registros:
 }
 ```
 
-### 💰 Roles de Finanzas
+### Roles de Finanzas
 
 **Contador** - Acceso total a pagos, solo lectura en personas:
 
@@ -337,7 +337,7 @@ Solo puede ver/editar sus propios registros:
 }
 ```
 
-### 🛡️ Roles de Seguridad
+### Roles de Seguridad
 
 **Auditor** - Solo lectura a logs y usuarios (sin contraseñas):
 
@@ -358,18 +358,18 @@ Solo puede ver/editar sus propios registros:
 
 ---
 
-## ✅ Mejores Prácticas
+## Mejores Prácticas
 
-### 🎯 Principio de Menor Privilegio
+### Principio de Menor Privilegio
 
 ```json
-// ❌ Evitar permisos muy amplios
+// Evitar permisos muy amplios
 {
   "action": ["manage"],
   "subject": ["all"]
 }
 
-// ✅ Ser específico
+// Ser específico
 {
   "action": ["read", "update"],
   "subject": ["People"],
@@ -380,13 +380,13 @@ Solo puede ver/editar sus propios registros:
 }
 ```
 
-### 📊 Organización de Roles
+### Organización de Roles
 
 1. **Roles Base**: admin, user, viewer
 2. **Roles Departamentales**: sales, finance, hr
 3. **Roles Específicos**: people_editor, payment_processor
 
-### 🔄 Orden de Permisos
+### Orden de Permisos
 
 Los permisos se evalúan en orden, coloque **más específicos primero**:
 
@@ -410,22 +410,22 @@ Los permisos se evalúan en orden, coloque **más específicos primero**:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Problema: "No field restrictions found"
 
 **Causa**: Permiso `manage` + `all` sobrescribe otros permisos
 
 ```json
-// ❌ Problemático
+// Problemático
 {
   "permissions": [
-    {"action": ["manage"], "subject": ["all"]},  // ← Esto override todo
+    {"action": ["manage"], "subject": ["all"]},  // Esto override todo
     {"action": ["read"], "subject": ["People"], "fields": [...]}
   ]
 }
 
-// ✅ Solución
+// Solución
 {
   "permissions": [
     {"action": ["read"], "subject": ["People"], "fields": [...]},
@@ -447,7 +447,7 @@ Los permisos se evalúan en orden, coloque **más específicos primero**:
 ```json
 // Verificar que tenga permisos específicos
 {
-  "action": ["create", "update"],  // ← Incluir acción específica
+  "action": ["create", "update"],  // Incluir acción específica
   "subject": ["People"], 
   "fields": {
     "create": ["name", "email"],
@@ -472,16 +472,16 @@ Use `{{variable}}` para datos dinámicos del usuario:
 
 ---
 
-## 🔗 Referencias Técnicas
+## Referencias Técnicas
 
 ### Logging de Debug
 
 Para debuggear permisos, revisar logs del servidor:
 
 ```
-🐛 [defineAbility] Processing role permissions: administrator
-🐛 [people] Accessible fields for READ: ["name", "email", "phone", "id"]
-✅ [people] Added field inclusion projection: {name: 1, email: 1, phone: 1, _id: 1}
+[defineAbility] Processing role permissions: administrator
+[people] Accessible fields for READ: ["name", "email", "phone", "id"]
+[people] Added field inclusion projection: {name: 1, email: 1, phone: 1, _id: 1}
 ```
 
 ### Endpoints Afectados
@@ -500,4 +500,4 @@ Para debuggear permisos, revisar logs del servidor:
 
 ---
 
-**✨ Con esta configuración tienes control total sobre qué puede hacer cada usuario en tu API SIDIS!**
+**Con esta configuración tienes control total sobre qué puede hacer cada usuario en tu API SIDIS!**

@@ -2,6 +2,7 @@ export default {
   "0e384e19": [() => import(/* webpackChunkName: "0e384e19" */ "@site/docs/intro.md"), "@site/docs/intro.md", require.resolveWeak("@site/docs/intro.md")],
   "17896441": [() => import(/* webpackChunkName: "17896441" */ "@theme/DocItem"), "@theme/DocItem", require.resolveWeak("@theme/DocItem")],
   "23374ca6": [() => import(/* webpackChunkName: "23374ca6" */ "@site/docs/README.md"), "@site/docs/README.md", require.resolveWeak("@site/docs/README.md")],
+  "465f1d37": [() => import(/* webpackChunkName: "465f1d37" */ "@site/docs/permissions-documentation.md"), "@site/docs/permissions-documentation.md", require.resolveWeak("@site/docs/permissions-documentation.md")],
   "55cf7cc1": [() => import(/* webpackChunkName: "55cf7cc1" */ "@site/docs/api-interactive.md"), "@site/docs/api-interactive.md", require.resolveWeak("@site/docs/api-interactive.md")],
   "5e95c892": [() => import(/* webpackChunkName: "5e95c892" */ "@theme/DocsRoot"), "@theme/DocsRoot", require.resolveWeak("@theme/DocsRoot")],
   "5e9f5e1a": [() => import(/* webpackChunkName: "5e9f5e1a" */ "@generated/docusaurus.config"), "@generated/docusaurus.config", require.resolveWeak("@generated/docusaurus.config")],

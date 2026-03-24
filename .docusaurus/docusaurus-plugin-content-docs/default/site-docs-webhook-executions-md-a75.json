@@ -14,8 +14,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "API Authentication Documentation",
-    "permalink": "/api_docs/docs/auth-api-documentation"
+    "title": "Documentación de Permisos",
+    "permalink": "/api_docs/docs/permissions-documentation"
   },
   "next": {
     "title": "Documentación Interactiva SIDIS API",
