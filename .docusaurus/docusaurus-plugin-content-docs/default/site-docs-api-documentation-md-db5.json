@@ -5,7 +5,7 @@
   "source": "@site/docs/api-documentation.md",
   "sourceDirName": ".",
   "slug": "/api-documentation",
-  "permalink": "/docs/api-documentation",
+  "permalink": "/api_docs/docs/api-documentation",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/api-documentation.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Introducción",
-    "permalink": "/docs/intro"
+    "permalink": "/api_docs/docs/intro"
   },
   "next": {
     "title": "API Interactiva",
-    "permalink": "/docs/api-interactive"
+    "permalink": "/api_docs/docs/api-interactive"
   }
 }

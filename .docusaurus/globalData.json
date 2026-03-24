@@ -1,48 +1,48 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/api_docs/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/api_docs/docs",
           "mainDocId": "README",
           "docs": [
             {
               "id": "api-documentation",
-              "path": "/docs/api-documentation",
+              "path": "/api_docs/docs/api-documentation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "api-interactive",
-              "path": "/docs/api-interactive",
+              "path": "/api_docs/docs/api-interactive",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "auth-api-documentation",
-              "path": "/docs/auth-api-documentation",
+              "path": "/api_docs/docs/auth-api-documentation",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/intro",
+              "path": "/api_docs/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "license",
-              "path": "/docs/license",
+              "path": "/api_docs/docs/license",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "README",
-              "path": "/docs/",
+              "path": "/api_docs/docs/",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "webhook-executions",
-              "path": "/docs/webhook-executions",
+              "path": "/api_docs/docs/webhook-executions",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -50,7 +50,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
+                "path": "/api_docs/docs/intro",
                 "label": "intro"
               }
             }

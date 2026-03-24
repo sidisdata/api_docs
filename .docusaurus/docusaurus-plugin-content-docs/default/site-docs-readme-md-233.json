@@ -5,7 +5,7 @@
   "source": "@site/docs/README.md",
   "sourceDirName": ".",
   "slug": "/",
-  "permalink": "/docs/",
+  "permalink": "/api_docs/docs/",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/README.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Documentación API - Webhook Execute",
-    "permalink": "/docs/webhook-executions"
+    "permalink": "/api_docs/docs/webhook-executions"
   },
   "next": {
     "title": "License",
-    "permalink": "/docs/license"
+    "permalink": "/api_docs/docs/license"
   }
 }

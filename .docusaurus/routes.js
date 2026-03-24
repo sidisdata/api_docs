@@ -3,56 +3,56 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/docs',
-    component: ComponentCreator('/docs', 'dfe'),
+    path: '/api_docs/docs',
+    component: ComponentCreator('/api_docs/docs', 'c42'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', 'da0'),
+        path: '/api_docs/docs',
+        component: ComponentCreator('/api_docs/docs', '72e'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', '7f8'),
+            path: '/api_docs/docs',
+            component: ComponentCreator('/api_docs/docs', '5c0'),
             routes: [
               {
-                path: '/docs/',
-                component: ComponentCreator('/docs/', 'ee3'),
+                path: '/api_docs/docs/',
+                component: ComponentCreator('/api_docs/docs/', 'acc'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/api-documentation',
-                component: ComponentCreator('/docs/api-documentation', '560'),
+                path: '/api_docs/docs/api-documentation',
+                component: ComponentCreator('/api_docs/docs/api-documentation', '715'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/api-interactive',
-                component: ComponentCreator('/docs/api-interactive', '8f1'),
+                path: '/api_docs/docs/api-interactive',
+                component: ComponentCreator('/api_docs/docs/api-interactive', '248'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/auth-api-documentation',
-                component: ComponentCreator('/docs/auth-api-documentation', '489'),
+                path: '/api_docs/docs/auth-api-documentation',
+                component: ComponentCreator('/api_docs/docs/auth-api-documentation', '71f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '61d'),
+                path: '/api_docs/docs/intro',
+                component: ComponentCreator('/api_docs/docs/intro', '699'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/license',
-                component: ComponentCreator('/docs/license', '773'),
+                path: '/api_docs/docs/license',
+                component: ComponentCreator('/api_docs/docs/license', '31b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/webhook-executions',
-                component: ComponentCreator('/docs/webhook-executions', '390'),
+                path: '/api_docs/docs/webhook-executions',
+                component: ComponentCreator('/api_docs/docs/webhook-executions', 'e6c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -63,8 +63,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', '2e1'),
+    path: '/api_docs/',
+    component: ComponentCreator('/api_docs/', '3f4'),
     exact: true
   },
   {

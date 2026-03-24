@@ -5,7 +5,7 @@
   "source": "@site/docs/license.md",
   "sourceDirName": ".",
   "slug": "/license",
-  "permalink": "/docs/license",
+  "permalink": "/api_docs/docs/license",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/license.md",
@@ -20,6 +20,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Documentación Interactiva SIDIS API",
-    "permalink": "/docs/"
+    "permalink": "/api_docs/docs/"
   }
 }

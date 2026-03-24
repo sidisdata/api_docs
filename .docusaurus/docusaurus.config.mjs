@@ -8,7 +8,7 @@ export default {
   "tagline": "Complete API documentation for SIDIS platform",
   "favicon": "img/favicon.ico",
   "url": "https://your-docusaurus-test-site.com",
-  "baseUrl": "/",
+  "baseUrl": "/api_docs/",
   "organizationName": "sidis",
   "projectName": "sidis-api-docs",
   "onBrokenLinks": "throw",

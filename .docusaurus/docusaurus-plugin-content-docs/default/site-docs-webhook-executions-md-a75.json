@@ -5,7 +5,7 @@
   "source": "@site/docs/webhook-executions.md",
   "sourceDirName": ".",
   "slug": "/webhook-executions",
-  "permalink": "/docs/webhook-executions",
+  "permalink": "/api_docs/docs/webhook-executions",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/sidis/sidis-api-docs/tree/main/docs/docs/webhook-executions.md",
@@ -15,10 +15,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "API Authentication Documentation",
-    "permalink": "/docs/auth-api-documentation"
+    "permalink": "/api_docs/docs/auth-api-documentation"
   },
   "next": {
     "title": "Documentación Interactiva SIDIS API",
-    "permalink": "/docs/"
+    "permalink": "/api_docs/docs/"
   }
 }
