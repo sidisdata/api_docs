@@ -23,6 +23,7 @@ const sidebars = {
         'api-documentation',
         'api-interactive',
         'auth-api-documentation',
+        'permissions-documentation',
       ],
     },
     {
